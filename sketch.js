@@ -2,6 +2,7 @@
 var song;
 var button;
 var loading = true;
+var img;
 
 //Setup function
 function setup() {
@@ -14,6 +15,7 @@ function setup() {
   button = createButton('Play'); //create play button
   button.parent('sketch-holder'); //position button inside of wrapper
   button.mousePressed(togglePlaying); //action to be performed on mouse click
+  img = loadImage('img/ili.png'); //loads image
 
 }
 
@@ -50,7 +52,6 @@ function draw() { //p5.js code
     	rect(0, 0, 50, 50);
 
   }else {
-    background(0,255,0); //if song is done loading and ready to play, change canvas backround to light green
-    text("Finished Loading", 50, 180); // add "finished loading" if song is loaded
+    image(img, 0, height/4, img.width/4, img.height/4);
   }
 }
