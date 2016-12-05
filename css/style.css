@@ -153,6 +153,20 @@ span {color: #1cbc9a;}
   max-width:50%;
 }
 #sketch-holder {
-  position:fixed;
-  right:20px;
+  position: fixed;
+  right: 40px;
+  z-index: 20;
+  margin-top:20px;
+}
+footer img {
+  max-width:100%;
+}
+
+#sketch-holder button {
+  display: block;
+  margin:auto;
+}
+#canvas-2 {
+  position: fixed;
+    right: 20px;
 }

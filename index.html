@@ -12,6 +12,7 @@
   <script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>
   <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
   <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
 </head>
 <body>
   <header>
@@ -19,6 +20,68 @@
       <h1>Karma</h2>
     </div>
     <div id="sketch-holder"></div>
+    <script type="text/processing" data-processing-target="canvas-2">
+
+
+
+    int i = 0;
+
+    void setup() {  // this is run once.
+
+
+    size (300,300);
+    strokeWeight(2);
+
+
+     //picture frame
+     stroke (0);
+    rect(0,0,300,300);
+    stroke (85,85);
+
+    noStroke();
+
+
+     //-K
+    stroke(8);
+    fill(56,60,0);
+
+     line(20,290,20,250);
+     line(20,270,49,250);
+     line(20,270,49,290);
+
+    //-A
+      line(60,290,80,252);
+      line(80,252,100,290);
+      line(67,278,93,278);
+
+    //-R
+
+     line(120,290,120,250);
+     line(120,250,150,250);
+     line(150,250,150,270);
+     line(150,270,120,270);
+     line(120,270,149,290);
+
+
+
+
+    //-N
+      line(170,290,170,254);
+      line(170,250,200,290);
+      line(200,290,230,250);
+      line(230,290,230,250);
+
+      //-A
+      line(240,290,260,252);
+      line(260,252,280,290);
+      line(247,278,273,278);
+
+    }
+
+
+
+   </script>
+   <canvas id="canvas-2"></canvas>
   </header>
 <div class="container">
   <h1>What is this site about.</h1>

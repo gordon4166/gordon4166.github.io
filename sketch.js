@@ -7,7 +7,7 @@ var img;
 //Setup function
 function setup() {
   // Create the canvas
-  var canvas = createCanvas(200, 200); //creates 200x200 canvas
+  var canvas = createCanvas(250, 200); //creates 200x200 canvas
   rectMode(CENTER);
   canvas.parent('sketch-holder'); //declares wrapper of canvas
 
